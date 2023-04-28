@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice_Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <style>
+        .form-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form {
+            width: calc(33.33% - 10px); /* 10px for the margin */
+            margin-right: 10px;
+        }
+
+        @media all and (max-width: 800px)and (min-width: 700px){
+            h1{
+                color: green;
+                font-size: 25px;
+            }
+            form{
+
+            }
+        }
+
+
+    </style>
+</head>
+<body style="">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: green">TUNA Pos System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Orders</a>
+                </li> <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Customers</a>
+                </li> <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Items</a>
+            </li> <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Invoice</a>
+            </li>
+
+            </ul>
+            <form>
+                <button class="btn btn-outline-success" type="submit">Log in</button>
+                <button class="btn btn-outline-success" type="submit">Sign up</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<br><br><br>
+<div class="form-wrapper">
+    <form style="border: 3px solid black">
+        <h3 style="background-color: forestgreen">Invoice Details</h3>
+        <label for="name">Order ID:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="name">Date:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+
+        <label for="name">Customer Name:</label>
+        <input type="text"  name="name"><br><br>
+
+        <label for="name">Address:</label>
+        <input type="text"  name="name"><br><br>
+
+        <label for="name">Item Name:</label>
+        <input type="text"  name="name"><br><br>
+    </form>
+
+    <form style="border: 3px solid black">
+        <h3 style="background-color: green">Item Select</h3>
+        <label for="name">Item Name:</label>
+        <input type="text"  name="name"><br><br>
+
+        <label for="password">Item Code:</label>
+        <input type="password"  name="password"><br><br>
+
+        <label for="password">Price:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="password">QTY:</label>
+        <input type="password"  name="password"><br><br>
+
+        <label for="password">QtyOnHand:</label>
+        <input type="password"  name="password"><br><br>
+
+
+        <button type="button" class="btn btn-danger">Add Item</button>
+    </form>
+
+    <form style="border: 3px solid black"  >
+        <h2 style="color: dodgerblue">Total : 10000.00</h2>
+        <h2 style="color: red">Discount : 1000.00</h2>
+        <h2 style="color: forestgreen">Total : 9000.00</h2><br><br>
+        <button type="button" class="btn btn-success">Success</button>
+    </form>
+</div>
+<hr>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col" style="background-color: dodgerblue">Item Code</th>
+        <th scope="col"style="background-color: dodgerblue">Item Name</th>
+        <th scope="col"style="background-color: dodgerblue">Price</th>
+        <th scope="col"style="background-color: dodgerblue">QTY</th>
+        <th scope="col"style="background-color: dodgerblue">Total</th>
+
+    </tr>
+    </thead>
+
+    <tr>
+        <th scope="row">1</th>
+        <td>#22555B5511</td>
+        <td>i phone 13 pro max</td>
+        <td>125000.00</td>
+        <td>120000.00</td>
+    </tr>
+</table>
+</body>
+</html>
